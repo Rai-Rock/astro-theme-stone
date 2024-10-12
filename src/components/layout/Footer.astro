@@ -1,32 +1,6 @@
 ---
 const bottomLinks = [
   {
-    header: 'Social',
-    links: [
-      {
-        name: 'Github',
-        href: 'https://github.com/',
-        isExternal: true,
-      },
-      {
-        name: 'Twitter',
-        href: 'https://twitter.com/',
-        isExternal: true,
-      },
-      {
-        name: 'Instagram',
-        href: 'https://instagram.com/',
-        isExternal: true,
-      },
-      {
-        name: 'Facebook',
-        href: 'https://facebook.com/',
-        isExternal: true,
-      },
-    ],
-  },
-  {
-    header: 'Company',
     links: [
       {
         name: 'Home',
@@ -34,38 +8,18 @@ const bottomLinks = [
         isExternal: false,
       },
       {
-        name: 'About',
+        name: 'Chi sono',
         href: '/about',
         isExternal: false,
       },
       {
-        name: 'Pricing',
+        name: 'Servizi',
         href: '/pricing',
         isExternal: false,
       },
       {
-        name: 'Contact',
+        name: 'Contattami',
         href: '/contact',
-        isExternal: false,
-      },
-    ],
-  },
-  {
-    header: 'Legal',
-    links: [
-      {
-        name: 'Privacy',
-        href: '/privacy',
-        isExternal: false,
-      },
-      {
-        name: '404',
-        href: '/404',
-        isExternal: false,
-      },
-      {
-        name: 'Styleguide',
-        href: '/styleguide',
         isExternal: false,
       },
     ],
@@ -92,16 +46,15 @@ const bottomLinks = [
           Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and
           Startup websites.
         </p>
-        <p class="text-primary-950/70 dark:text-primary-200/70 text-sm">© 2023 Stone</p>
       </div>
-
-      <!-- Bottom links -->
-      <div class="grid max-w-xl flex-1 grid-cols-1 gap-8 sm:grid-cols-3">
+            <!-- Bottom links -->
+      <div class="grid max-w-xl  grid-rows-1 gap-8 ">
+        
         {
           bottomLinks.map((group) => (
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-row justify-end ">
               <p class="text-base font-medium">{group.header}</p>
-              <ul role="list" class="flex flex-col gap-3">
+              <ul role="list" class="flex flex-row gap-3">
                 {group.links.map((link) => (
                   <li>
                     <a
@@ -129,7 +82,11 @@ const bottomLinks = [
             </div>
           ))
         }
+              <p class="  text-primary-950/70 dark:text-primary-200/70 text-sm">© 2024 Riccardo Gualtieri</p>
+
       </div>
     </div>
+    
   </div>
+  
 </footer>
